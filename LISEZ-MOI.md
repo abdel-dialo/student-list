@@ -52,10 +52,14 @@ pousser le code sur notre dépôt distant
 - Editer le _Dockerfile_ en rajoutant les instructions permettant de builder l’image de l’API REST
 - Builder l’image
 
+  ![image](https://github.com/abdel-dialo/student-list/assets/58465298/d22f161d-c475-40e2-b624-c442790408ff)
 
 # Lancement du conteneur API REST
+  ![image](https://github.com/abdel-dialo/student-list/assets/58465298/8a8de603-2936-49c0-909d-980f817c7f52)
 
 # Test de l’API REST
+  ![image](https://github.com/abdel-dialo/student-list/assets/58465298/7fb7c444-6ef7-45af-bf93-82e8dc7b6d06)
+
 
 # Déploiement de l’application avec une infrastructure as code :
 
@@ -71,45 +75,60 @@ _student-list_ :
 
 - Le conteneur _student_list_api_ doit se lancer avant le conteneur _pozos_website_ pour cela j’ai
     rajouté l’option _depends_on_ dans le fichier _docker-compose.yml_
+  ![image](https://github.com/abdel-dialo/student-list/assets/58465298/77048f66-822e-47af-99ce-b463bec5a33a)
+
 - J’ai rajouté également un réseau qui permet aux conteneurs de communiquer entre eux
+  ![image](https://github.com/abdel-dialo/student-list/assets/58465298/68361079-5df8-40be-8a2a-5a132deb92a2)
+
 
 # Déploiement avec docker-compose
 
-- Lancement du conteneur
+- Lancement des conteneurs à partir du docker-compose.yml (supprimer le conteneur _student_list_api_ avant)
+  ![image](https://github.com/abdel-dialo/student-list/assets/58465298/cc6c1546-f0cd-4e8a-9afd-adb889884b3e)
+
 - Affichage des conteneurs
+  ![image](https://github.com/abdel-dialo/student-list/assets/58465298/cceba10f-b0a7-441c-a951-14db65933586)
+
 - Editer le fichier _index.html_ et mettre à jour la valeur de l’url de l’api
+  ![image](https://github.com/abdel-dialo/student-list/assets/58465298/8fab80d0-315e-430e-85cc-cb1e36c63823)
+
 
 # Vérifier le fonctionnement de l’application
 
-- Afficher l’adresse IP de notre conteneur
-
+- Afficher l’adresse IP du serveur hôte
+  ![image](https://github.com/abdel-dialo/student-list/assets/58465298/a844423e-02e5-458e-8a8c-69eed22aac4f)
 
 - Ouvrir l’application avec l’adresse de la VM sur le port 80 (port par default)
+   ![image](https://github.com/abdel-dialo/student-list/assets/58465298/1c2f1bdb-b293-4e33-a967-041e42fba5d1)
+
+   ![image](https://github.com/abdel-dialo/student-list/assets/58465298/fe41c1e3-2730-49c3-8738-61602db53a15)
+
 
 # Création du registre privé
 
-```
-Pour la création du registry j’ai utilisé un fichier docker-compose.registry.yml qui contient les
-```
-# deux services pozos_registry et frontend-registry :
+Pour la création du registry j’ai utilisé un fichier docker-compose.registry.yml qui contient les deux services pozos_registry et frontend-registry:
 
-```
-o Pour éviter de perdre les images hébergées dans le conteneur registre je monté le
-répertoire /data/registry dans le répertoire /var/lib/registry du conteneur
-```
-```
-o Pour sécurise l’accès au registre j’ai rajouté une authentification à l’aide du fichier
+- Pour éviter de perdre les images hébergées dans le conteneur registre j'ai monté le
+répertoire _/data/registry_ dans le répertoire _/var/lib/registry_ du conteneur
+![image](https://github.com/abdel-dialo/student-list/assets/58465298/99d57bcb-7b87-4655-a209-5bd374982501)
+
+- Pour sécurise l’accès au registre j’ai rajouté une authentification à l’aide du fichier
 htpasswd par conséquent pour se connecter voici le accès à notre registre
 privé : Username=pozos et le password=pozos-registry
-```
-# o Lancement des services pozos_registry et frontend_registry
+ ![image](https://github.com/abdel-dialo/student-list/assets/58465298/a55bfb76-6b9c-4627-8304-4c0713cb3d09)
+  
+- Lancement des services pozos_registry et frontend_registry
+  ![image](https://github.com/abdel-dialo/student-list/assets/58465298/696fb52b-7eca-460f-a52b-bd97caedbf61)
 
+- Liste des conteneurs crées
+  ![image](https://github.com/abdel-dialo/student-list/assets/58465298/ec10cdb7-3114-4e6c-890f-732b0d1c6e1f)
 
-# o Liste des conteneurs crées
 
 # Pousser l’image API REST dans notre registre
 
-# o Se connecter à notre registry et pousser notre image
+- Se connecter à notre registry et pousser notre image
+  ![image](https://github.com/abdel-dialo/student-list/assets/58465298/b461453e-c51a-4f20-8c02-96e8eb8b4d0b)
+
 
 
 # Conclusion
