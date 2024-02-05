@@ -29,16 +29,22 @@ Promotion :BootCamp DevOps 17
 - LISEZ-MOI.md
 
 # Infrastructure Hébergeant nos conteneurs
-
 Comme il nous a été recommandé j’ai utilisé une machine virtuelle centos7 et j’ai utilisé Vagrant pour
 provisionner cette machine virtuelle sur Virtualbox.
 Ci-dessous le fichier Vagrantfile fourni
 
+![image](https://github.com/abdel-dialo/student-list/assets/58465298/b9980960-9dd4-441b-9bb1-bd4afaca3375)
 
 # Récupération du code source depuis Github
 
 Après avoir cloner le projet se déplacer dans le répertoire _student-list_ ajouter notre dépôt distant et
 pousser le code sur notre dépôt distant
+![image](https://github.com/abdel-dialo/student-list/assets/58465298/9a29908d-3945-4ba9-8f7e-9a39876226fa)
+![image](https://github.com/abdel-dialo/student-list/assets/58465298/5ef5d7eb-de03-43e7-abf8-9ef5ca85c3e9)
+![image](https://github.com/abdel-dialo/student-list/assets/58465298/5e0a4691-f03e-4ae8-acdb-c50503fd4986)
+
+
+
 
 # Build de l’image API REST
 
