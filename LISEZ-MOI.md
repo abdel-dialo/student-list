@@ -4,6 +4,8 @@ Promotion :BootCamp DevOps 17
 
 # Mini-Projet Docker
 
+![image](https://github.com/abdel-dialo/student-list/assets/58465298/520dc144-4844-4a56-9282-5c2970228346)
+
 # Application :Student-list
 
 **Student-list** est une simple application de l’entreprise POZOS construite avec deux modules :
