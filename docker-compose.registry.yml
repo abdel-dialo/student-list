@@ -27,9 +27,9 @@ services:
     depends_on:
       - pozos-registry
     ports: 
-      - "8080:80"
+      - "8081:80"
     environment:
-      - NGINX_PROXY_PASS_URL=http://pozos-registry:5050
+      - NGINX_PROXY_PASS_URL=http://pozos-registry:5000
       - DELETE_IMAGES=true
       - REGISTRY_TITLE=Pozos
       - SINGLE_REGISTRY=true
