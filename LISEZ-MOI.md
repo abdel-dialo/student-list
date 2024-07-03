@@ -125,9 +125,10 @@ privé : Username=pozos - password=pozos-registry
 # Pousser l’image de l'API REST dans notre registre privé
 
 - Se connecter à notre registre et pousser notre image
-  ![image](https://github.com/abdel-dialo/student-list/assets/58465298/c8340804-b996-4a3d-9f33-cccd5bcbd5bd)
 
-  ![image](https://github.com/abdel-dialo/student-list/assets/58465298/3cfbc9cb-8e99-405e-adf9-2c926df53773)
+ ![alt text](images/push-image.png)
+
+  ![alt text](images/registry.png)
 
 
 # Conclusion
