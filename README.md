@@ -6,6 +6,8 @@ Promotion: BootCamp DevOps 17
 
 # Mini-Projet Docker
 
+Mini projet réalisé dans le cadre du Bootcamp Devops chez Easytraining.fr
+
 ![image](https://github.com/abdel-dialo/student-list/assets/58465298/520dc144-4844-4a56-9282-5c2970228346)
 
 # Application: Student-list
