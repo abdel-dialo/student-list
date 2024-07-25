@@ -6,7 +6,7 @@ Promotion: BootCamp DevOps 17
 
 # Mini-Projet Docker
 
-Mini projet réalisé dans le cadre du Bootcamp Devops chez Easytraining.fr
+Ce mini projet réalisé dans le cadre du Bootcamp Devops chez Easytraining.fr
 
 ![image](https://github.com/abdel-dialo/student-list/assets/58465298/520dc144-4844-4a56-9282-5c2970228346)
 
@@ -54,7 +54,7 @@ pousser le code sur notre dépôt distant
 - Editer le _Dockerfile_ en rajoutant les instructions permettant de builder l’image de l’API REST
 - Builder l’image
 
-  ![image](https://github.com/abdel-dialo/student-list/assets/58465298/d22f161d-c475-40e2-b624-c442790408ff)
+  ![alt text](images/image.png)
 
 # Lancement du conteneur API REST
   ![image](https://github.com/abdel-dialo/student-list/assets/58465298/8a8de603-2936-49c0-909d-980f817c7f52)
