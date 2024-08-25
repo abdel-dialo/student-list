@@ -1,9 +1,3 @@
-Prénom: Abdoul Gadirou
-
-Nom: DIALLO
-
-Promotion: BootCamp DevOps 17
-
 # Mini-Projet Docker
 
 Ce mini projet réalisé dans le cadre du Bootcamp Devops chez Easytraining.fr
@@ -143,11 +137,6 @@ d’infrastructure As Code avec docker-compose et le stockage des images docker 
 un registre privé, de comprendre aussi le lien entre les architectures micro-service et
 docker.
 
-Cela me permettra de mettre en pratique ces connaissances dans des projets en
-entreprise.
-
-C’est aussi une bonne base qui va me permettre d’aller plus loin dans les
-technologies DevOps à savoir la sécurité, l’orchestration, le CI/CD et l’automatisation.
 
 
 
